@@ -1,0 +1,14 @@
+[Unit]
+Description=GB Text Alert Service
+After=network.target
+ConditionPathExists=/home/user/gb-api/textAlert
+ 
+[Service]
+Type=simple
+WorkingDirectory=/home/user/gb-api/textAlert
+ExecStart=/home/user/gb-api/textAlert/venv/bin/python orderTextAlert.py
+PIDFile=/tmp/gbTextAlert.pid 
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
