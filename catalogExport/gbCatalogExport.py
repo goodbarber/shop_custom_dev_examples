@@ -14,7 +14,7 @@ class localConfig:
 
 
 def formatCatalog(endpoint: str, token: str, mode: int):
-    """Retrieves a GB catalog and formats it for use with third party shopping platforms
+    """Retrieves a GB catalog and formats it to use with third party shopping platforms
 
     Args:
         endpoint (str): GB Api endpoint
@@ -52,16 +52,17 @@ def formatCatalog(endpoint: str, token: str, mode: int):
                               f"""({product['title']}) has no description, discarding""")
                 continue
 
-            # Create new dict in the product array to store the current variant
+            # Create a new dict in the product array to store the current variant
             work_dict = {}
 
             try:
-                # Google wants the sku to be a separate field
+                # Google wants the SKU to be a separate field
                 work_dict["id"] = product["id"] if mode == 1 else variant["sku"]
 
                 if mode == Mode.GOOGLE:
-                    # Google Shopping specific fields
-                    # id is set to the sku if present, else it defaults to the product id
+                    # Google Shopping specific field
+                    # The ID is set with the product ID by default
+                    # If the SKU is set, we fill it with the SKU
                     work_dict["item_group_id"] = variant["id"]
 
                 # Global fields

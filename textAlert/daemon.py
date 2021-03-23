@@ -14,7 +14,7 @@ class Daemon:
 		self.callback = callback
 	
 	def daemonize(self):
-		#do the UNIX double-fork magic
+		# do the UNIX double-fork magic
 		try: 
 			pid = os.fork() 
 			if pid > 0:
@@ -26,7 +26,7 @@ class Daemon:
 	
 		# decouple from parent environment
 		os.chdir("/") 
-		os.setsid() #Make fork #1 a session leader with no TTY
+		os.setsid() # Make fork #1 a session leader with no TTY
 		os.umask(0) 
 	
 		# do second fork

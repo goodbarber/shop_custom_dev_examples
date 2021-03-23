@@ -16,7 +16,7 @@ l = logging.getLogger(__name__)
 logging.basicConfig(filename="out.log", level=logging.INFO)
 
 
-# add the journald handler to the current logger
+# add the journal handler to the current logger
 l.addHandler(journal.JournalHandler())
 
 l.info("Starting notifier service at " + str(datetime.utcnow()))
@@ -57,7 +57,7 @@ def orderAlertCoro(sleep_period: int = 60):
 							Config.TWILIO_SID, Config.TWILIO_TOKEN),
 					).json()
 
-					# Add the current order's id to the array so we don't send duplicate texts
+					# Add the current order's id to the array so we don't send duplicated texts
 					pending_array.append(i["order_num"])
 
 					if "code" in r or ("error_code" in r and r["error_code"] != None):
