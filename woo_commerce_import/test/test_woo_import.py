@@ -7,8 +7,10 @@ from woo_commerce.import_process import WooImportProcess, GbOption
 from woo_commerce.import_process import UtilTreatment
 from public_api.src.httpClient.catalogapi import CatalogApi
 
+
 class TestWooImport(unittest.TestCase):
     PATH_TEST = "test/data"
+
     def setUp(self):
         self.patcher = mock.patch('public_api.src.httpClient.catalogapi.CatalogApi.list_all_collections')
         self.mock_foo = self.patcher.start()
@@ -98,13 +100,17 @@ class TestWooImport(unittest.TestCase):
             'price': "50.00",
             'sku': woo_product.get('sku'),
             'option_values': [],
-            'stock': woo_product.get('stock_quantity') if woo_product.get('stock_quantity') else 0,
-            'weight': self.woo_import_process.util.convert_grams_in_kilo(int(woo_product.get('weight'))) if woo_product.get('weight') != '' else 0
+            'stock': woo_product.get('stock_quantity')
+            if woo_product.get('stock_quantity') else 0,
+            'weight': self.woo_import_process.util.convert_grams_in_kilo(
+                int(woo_product.get('weight')))
+            if woo_product.get('weight') != '' else 0
         }
         self.assertDictEqual(parse_variant[0], gb_variant)
-        #PARSING WITH VARIANTS OPTIONS
+        # PARSING WITH VARIANTS OPTIONS
         woo_product = self.data_woo_commerce[3]
-        parse_variant = self.woo_import_process.parse_detail_variant(woo_product, gb_api_product)
+        parse_variant = self.woo_import_process.parse_detail_variant(
+            woo_product, gb_api_product)
         gb_variant = {
             'price': "20.00",
             'sku': self.woo_variant.get('sku'),
@@ -113,13 +119,16 @@ class TestWooImport(unittest.TestCase):
                     "15": "S"
                 }
                 ],
-            'stock': self.woo_variant.get('stock_quantity') if self.woo_variant.get('stock_quantity') else 0,
-            'weight': self.woo_import_process.util.convert_grams_in_kilo(int(self.woo_variant.get('weight'))) if self.woo_variant.get('weight') != '' else 0
+            'stock': self.woo_variant.get('stock_quantity')
+            if self.woo_variant.get('stock_quantity') else 0,
+            'weight': self.woo_import_process.util.convert_grams_in_kilo(
+                int(self.woo_variant.get('weight')))
+            if self.woo_variant.get('weight') != '' else 0
         }
         self.assertDictEqual(gb_variant, parse_variant[0])
 
 
-class TestUtilTreatmen(unittest.TestCase):
+class TestUtilTreatment(unittest.TestCase):
     def setUp(self):
         self.util = UtilTreatment()
 
@@ -131,6 +140,7 @@ class TestUtilTreatmen(unittest.TestCase):
         clean_html = self.util.cleanhtml(raw_html)
         result_compare = "The GoodBarber famous T-Shirt\n"
         self.assertEqual(clean_html, result_compare)
+
 
 if __name__ == '__main__':
     unittest.main()

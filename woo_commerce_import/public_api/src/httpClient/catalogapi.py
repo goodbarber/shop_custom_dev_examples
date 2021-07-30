@@ -52,16 +52,18 @@ class CatalogApi(CallApi):
     def create_a_variant(self, product_id, data):
         # print(urljoin(self.url,
         #               f'product/{product_id}/variant/'))
-        return self.post(urljoin(self.url,f'product/{product_id}/variant/'),
-                         data=data,
-                         headers=self.headers)
+        return self.post(
+            urljoin(self.url, f'product/{product_id}/variant/'),
+            data=data,
+            headers=self.headers)
 
     def upload_a_product_slide(self, product_id, data):
         print(urljoin(self.url,
                       f'product/{product_id}/slide/'))
-        return self.upload_file(urljoin(self.url,f'product/{product_id}/slide/'),
-                         data=data,
-                         headers=self.headers)
+        return self.upload_file(
+            urljoin(self.url, f'product/{product_id}/slide/'),
+            data=data,
+            headers=self.headers)
 
     def list_all_collections(self):
         return self.get(urljoin(self.url, 'collection'),
@@ -77,27 +79,31 @@ class CatalogApi(CallApi):
                           headers=self.headers)
 
     def delete_a_product_slide(self, product_id, slide_id):
-        return self.delete(urljoin(self.url, f'product/{product_id}/slide/{slide_id}/'),
-                          headers=self.headers)
+        return self.delete(
+            urljoin(self.url,
+                    f'product/{product_id}/slide/{slide_id}/'),
+            headers=self.headers)
 
     def delete_a_product(self, product_id):
-        return self.delete(urljoin(self.url, f'product/{product_id}/'),
-                          headers=self.headers)
+        return self.delete(
+            urljoin(self.url, f'product/{product_id}/'),
+            headers=self.headers)
 
     def upload_a_product_pdf(self, product_id, data):
-        return self.upload_file(urljoin(self.url, f'product/{product_id}/pdf/'),
-                         data=data,
-                         headers=self.headers)
+        return self.upload_file(
+            urljoin(self.url, f'product/{product_id}/pdf/'),
+            data=data,
+            headers=self.headers)
 
     def delete_a_product_pdf(self, product_id):
         return self.delete(urljoin(self.url, f'product/{product_id}/pdf/'),
-                         headers=self.headers)
+                           headers=self.headers)
 
     def create_a_variant_option(self, data):
         try:
             res = self.post(urljoin(self.url, 'option/'),
-                         data=data,
-                         headers=self.headers)
+                            data=data,
+                            headers=self.headers)
             return res
         except requests.exceptions.HTTPError as err:
             return res

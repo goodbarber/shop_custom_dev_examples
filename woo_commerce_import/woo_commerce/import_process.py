@@ -8,6 +8,9 @@ from configuration import config as config
 from public_api.src.httpClient.catalogapi import CatalogApi
 
 
+logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.DEBUG)
+
+
 class Collection(object):
     """
     Class to represent a collection in order to compare both woo and gb
@@ -67,6 +70,7 @@ class UtilTreatment(object):
         cleantext = re.sub(cleanr, '', raw_html)
         return cleantext
 
+
 class WooImportProcess(object):
     """
     Class that specify all the process needed for the catalog
@@ -104,6 +108,9 @@ class WooImportProcess(object):
         return data
 
     def parse_detail_product(self, woo_product):
+        """
+        Method that allow to parse the detail products in GoodBarber format
+        """
         woo_categories = [Collection(**category) for category in woo_product.get('categories')]
         collections_ids = self.get_existing_collections(woo_categories)
         if len(collections_ids) == 0:
@@ -130,6 +137,11 @@ class WooImportProcess(object):
         return all_options
 
     def create_options_in_gb(self, options):
+        """
+        Method that allow to create options in GoodBarber app.
+        All the options referenced in the variant will be created.
+        If already created, the options will be recover by the public api.
+        """
         for option in options:
             option_data = {
                 "name": option.name,
@@ -141,12 +153,13 @@ class WooImportProcess(object):
                 option.id = str(gb_data.get('id'))
                 self.gb_parse_options.append(option)
             elif res.status_code >= 400:
-                print("ERROR CREATING OPTION VARIANT")
+                logging.info("ERROR CREATING OPTION VARIANT, GET THE OPTIONS")
                 for option in self.all_options.get('options'):
                     if option.get('name') == option_data.get('name'):
                         self.gb_parse_options.append(GbOption(name=option.get('name'),
                                                               id_gb=option.get('id')))
-                        print(f"Get the option with name {option.get('name')} already created")
+                        logging.info(f"Get the option with name {option.get('name')} already created")
+                        break
 
     def recover_gb_option(self, woo_attribute):
         """
@@ -190,15 +203,19 @@ class WooImportProcess(object):
             parse_opt = self.parse_options(woo_product)
             self.create_options_in_gb(parse_opt)
             for id_variant in woo_variations:
-                woo_variant = self.wc_api.get(f"products/{id_product}/variations/{id_variant}").json()
+                woo_variant = self.wc_api.get(f"products/"
+                                              f"{id_product}/variations/{id_variant}").json()
                 woo_price = float(format(float(woo_variant.get('price')), '.2f'))
                 woo_price = format(woo_price, '.2f')
                 gb_variant = {
                     'price': woo_price if woo_variant.get('price') != "" else "0.00",
                     'sku': woo_variant.get('sku'),
                     'option_values': self.parse_options_values(woo_variant),
-                    'stock': woo_variant.get('stock_quantity') if woo_variant.get('stock_quantity') else 0,
-                    'weight': self.util.convert_grams_in_kilo(int(woo_variant.get('weight'))) if woo_variant.get('weight') != '' else 0
+                    'stock': woo_variant.get('stock_quantity')
+                    if woo_variant.get('stock_quantity') else 0,
+                    'weight': self.util.convert_grams_in_kilo(
+                        int(woo_variant.get('weight')))
+                    if woo_variant.get('weight') != '' else 0
                 }
                 logging.info(f'gb_variant with sku {gb_variant.get("sku")}')
                 if woo_variant.get('price') != woo_variant.get('regular_price'):
@@ -206,11 +223,15 @@ class WooImportProcess(object):
                 all_variants.append(gb_variant)
         else:
             gb_variant = {
-                'price': woo_price if woo_product.get('price') != "" else "0.00",
+                'price': woo_price if woo_product.get('price') != ""
+                else "0.00",
                 'sku': woo_product.get('sku'),
                 'option_values': [],
-                'stock': woo_product.get('stock_quantity') if woo_product.get('stock_quantity') else 0,
-                'weight': self.util.convert_grams_in_kilo(int(woo_product.get('weight'))) if woo_product.get('weight') != '' else 0
+                'stock': woo_product.get('stock_quantity')
+                if woo_product.get('stock_quantity') else 0,
+                'weight': self.util.convert_grams_in_kilo(
+                    int(woo_product.get('weight')))
+                if woo_product.get('weight') != '' else 0
             }
             logging.info(f'gb_variant with sku {gb_variant.get("sku")}')
             if woo_product.get('price') != woo_product.get('regular_price'):
@@ -253,8 +274,9 @@ class WooImportProcess(object):
         gb_variants = self.parse_detail_variant(product, product_gb_api)
         id_gb_product = product_gb_api.get('id')
         for gb_variant in gb_variants:
-            id_variant = self.catalog_public_api.create_a_variant(id_gb_product,
-                                                                  gb_variant).json().get('id')
+            id_variant = self.catalog_public_api.create_a_variant(
+                id_gb_product,
+                gb_variant).json().get('id')
             logging.info(f'VARIANT Created in GB: {id_variant}')
         return True
 
@@ -270,7 +292,8 @@ class WooImportProcess(object):
             name_img = f"{woo_image_object.get('name')}.{extension}"
             data['image_file'] = (name_img, image_rsrc.content,
                                   self.get_right_filetype(extension))
-            res = self.catalog_public_api.upload_a_product_slide(product_gb.get('id'), data).json()
+            res = self.catalog_public_api.upload_a_product_slide(
+                product_gb.get('id'), data).json()
             logging.info(f"Upload image {res}")
             if not product_gb.get('media'):
                 thumbnail = {"media": res.get('id')}
