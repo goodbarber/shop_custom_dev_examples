@@ -10,6 +10,10 @@ from public_api.src.httpClient.catalogapi import CatalogApi
 class TestWooImport(unittest.TestCase):
     PATH_TEST = "test/data"
     def setUp(self):
+        self.patcher = mock.patch('public_api.src.httpClient.catalogapi.CatalogApi.list_all_collections')
+        self.mock_foo = self.patcher.start()
+        self.patcher = mock.patch('public_api.src.httpClient.catalogapi.CatalogApi.list_all_options')
+        self.mock_foo = self.patcher.start()
         self.woo_import_process = WooImportProcess()
         with open(f"{self.PATH_TEST}/woo_commerce.json", "r") as woo_file:
             self.data_woo_commerce = json.load(woo_file)
