@@ -1,0 +1,490 @@
+[
+    {
+      "id": 14,
+      "name": "Hoodie",
+      "slug": "hoodie",
+      "permalink": "http://146.59.157.196:8005/produit/hoodie/",
+      "date_created": "2021-06-29T09:03:32",
+      "date_created_gmt": "2021-06-29T07:03:32",
+      "date_modified": "2021-07-07T14:00:54",
+      "date_modified_gmt": "2021-07-07T12:00:54",
+      "type": "simple",
+      "status": "publish",
+      "featured": false,
+      "catalog_visibility": "visible",
+      "description": "<p>The GoodBarber Hoodie</p>\n",
+      "short_description": "",
+      "sku": "GB",
+      "price": "50",
+      "regular_price": "50",
+      "sale_price": "",
+      "date_on_sale_from": null,
+      "date_on_sale_from_gmt": null,
+      "date_on_sale_to": null,
+      "date_on_sale_to_gmt": null,
+      "on_sale": false,
+      "purchasable": true,
+      "total_sales": 0,
+      "virtual": false,
+      "downloadable": false,
+      "downloads": [],
+      "download_limit": -1,
+      "download_expiry": -1,
+      "external_url": "",
+      "button_text": "",
+      "tax_status": "taxable",
+      "tax_class": "",
+      "manage_stock": true,
+      "stock_quantity": 20,
+      "backorders": "no",
+      "backorders_allowed": false,
+      "backordered": false,
+      "low_stock_amount": null,
+      "sold_individually": false,
+      "weight": "",
+      "dimensions": {
+        "length": "",
+        "width": "",
+        "height": ""
+      },
+      "shipping_required": true,
+      "shipping_taxable": true,
+      "shipping_class": "",
+      "shipping_class_id": 0,
+      "reviews_allowed": true,
+      "average_rating": "0.00",
+      "rating_count": 0,
+      "upsell_ids": [],
+      "cross_sell_ids": [],
+      "parent_id": 0,
+      "purchase_note": "",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Pull / Sweat Hoodie",
+          "slug": "pull-sweat-hoodie"
+        }
+      ],
+      "tags": [],
+      "images": [
+        {
+          "id": 15,
+          "date_created": "2021-06-29T11:01:42",
+          "date_created_gmt": "2021-06-29T07:01:42",
+          "date_modified": "2021-06-29T11:01:42",
+          "date_modified_gmt": "2021-06-29T07:01:42",
+          "src": "http://146.59.157.196:8005/wp-content/uploads/2021/06/goodbarber_hoodie_6_1024x1024@2x-compressed.jpg",
+          "name": "goodbarber_hoodie_6_1024x1024@2x-compressed",
+          "alt": ""
+        },
+        {
+          "id": 16,
+          "date_created": "2021-06-29T11:02:49",
+          "date_created_gmt": "2021-06-29T07:02:49",
+          "date_modified": "2021-06-29T11:02:49",
+          "date_modified_gmt": "2021-06-29T07:02:49",
+          "src": "http://146.59.157.196:8005/wp-content/uploads/2021/06/GoodBarber_hoodie_2_1024x1024@2x-compressed.jpg",
+          "name": "GoodBarber_hoodie_2_1024x1024@2x-compressed",
+          "alt": ""
+        },
+        {
+          "id": 17,
+          "date_created": "2021-06-29T11:03:16",
+          "date_created_gmt": "2021-06-29T07:03:16",
+          "date_modified": "2021-06-29T11:03:16",
+          "date_modified_gmt": "2021-06-29T07:03:16",
+          "src": "http://146.59.157.196:8005/wp-content/uploads/2021/06/GoodBarber_hoodie_1_1024x1024@2x-compressed.jpg",
+          "name": "GoodBarber_hoodie_1_1024x1024@2x-compressed",
+          "alt": ""
+        }
+      ],
+      "attributes": [],
+      "default_attributes": [],
+      "variations": [],
+      "grouped_products": [],
+      "menu_order": 0,
+      "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi>50,00<span class=\"woocommerce-Price-currencySymbol\">&euro;</span></bdi></span>",
+      "related_ids": [],
+      "meta_data": [
+        {
+          "id": 55,
+          "key": "_last_editor_used_jetpack",
+          "value": "classic-editor"
+        },
+        {
+          "id": 83,
+          "key": "_wc_gla_visibility",
+          "value": "sync-and-show"
+        }
+      ],
+      "stock_status": "outofstock",
+      "_links": {
+        "self": [
+          {
+            "href": "http://146.59.157.196:8005/wp-json/wc/v3/products/14"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://146.59.157.196:8005/wp-json/wc/v3/products"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "name": "Key rings",
+      "slug": "key-ring",
+      "permalink": "http://146.59.157.196:8005/produit/key-ring/",
+      "date_created": "2021-06-28T20:59:18",
+      "date_created_gmt": "2021-06-28T18:59:18",
+      "date_modified": "2021-07-07T17:17:54",
+      "date_modified_gmt": "2021-07-07T15:17:54",
+      "type": "simple",
+      "status": "publish",
+      "featured": false,
+      "catalog_visibility": "visible",
+      "description": "<p>Traveler's key ring</p>\n",
+      "short_description": "",
+      "sku": "KRGB",
+      "price": "2",
+      "regular_price": "5",
+      "sale_price": "2",
+      "date_on_sale_from": null,
+      "date_on_sale_from_gmt": null,
+      "date_on_sale_to": null,
+      "date_on_sale_to_gmt": null,
+      "on_sale": true,
+      "purchasable": true,
+      "total_sales": 0,
+      "virtual": false,
+      "downloadable": false,
+      "downloads": [],
+      "download_limit": -1,
+      "download_expiry": -1,
+      "external_url": "",
+      "button_text": "",
+      "tax_status": "taxable",
+      "tax_class": "",
+      "manage_stock": true,
+      "stock_quantity": 17,
+      "backorders": "no",
+      "backorders_allowed": false,
+      "backordered": false,
+      "low_stock_amount": null,
+      "sold_individually": false,
+      "weight": "3000",
+      "dimensions": {
+        "length": "",
+        "width": "",
+        "height": ""
+      },
+      "shipping_required": true,
+      "shipping_taxable": true,
+      "shipping_class": "",
+      "shipping_class_id": 0,
+      "reviews_allowed": true,
+      "average_rating": "0.00",
+      "rating_count": 0,
+      "upsell_ids": [],
+      "cross_sell_ids": [],
+      "parent_id": 0,
+      "purchase_note": "",
+      "categories": [
+        {
+          "id": 16,
+          "name": "Accessoire",
+          "slug": "accessoire"
+        }
+      ],
+      "tags": [],
+      "images": [
+        {
+          "id": 20,
+          "date_created": "2021-06-29T16:35:31",
+          "date_created_gmt": "2021-06-29T12:35:31",
+          "date_modified": "2021-06-29T16:35:31",
+          "date_modified_gmt": "2021-06-29T12:35:31",
+          "src": "http://146.59.157.196:8005/wp-content/uploads/2021/06/GoodBarber-key-ring-2_1024x1024@2x.jpg",
+          "name": "GoodBarber-key-ring-2_1024x1024@2x",
+          "alt": ""
+        }
+      ],
+      "attributes": [],
+      "default_attributes": [],
+      "variations": [],
+      "grouped_products": [],
+      "menu_order": 0,
+      "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><bdi>5,00<span class=\"woocommerce-Price-currencySymbol\">&euro;</span></bdi></span></del> <ins><span class=\"woocommerce-Price-amount amount\"><bdi>2,00<span class=\"woocommerce-Price-currencySymbol\">&euro;</span></bdi></span></ins>",
+      "related_ids": [],
+      "meta_data": [
+        {
+          "id": 5,
+          "key": "_last_editor_used_jetpack",
+          "value": "classic-editor"
+        },
+        {
+          "id": 29,
+          "key": "_wc_gla_visibility",
+          "value": "sync-and-show"
+        }
+      ],
+      "stock_status": "outofstock",
+      "_links": {
+        "self": [
+          {
+            "href": "http://146.59.157.196:8005/wp-json/wc/v3/products/10"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://146.59.157.196:8005/wp-json/wc/v3/products"
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "name": "T-shirt",
+      "slug": "t-shirt",
+      "permalink": "http://146.59.157.196:8005/produit/t-shirt/",
+      "date_created": "2021-06-29T08:59:53",
+      "date_created_gmt": "2021-06-29T06:59:53",
+      "date_modified": "2021-07-07T16:17:58",
+      "date_modified_gmt": "2021-07-07T14:17:58",
+      "type": "simple",
+      "status": "publish",
+      "featured": false,
+      "catalog_visibility": "visible",
+      "description": "<p>The GoodBarber famous T-Shirt</p>\n",
+      "short_description": "",
+      "sku": "TSGB",
+      "price": "15",
+      "regular_price": "15",
+      "sale_price": "",
+      "date_on_sale_from": null,
+      "date_on_sale_from_gmt": null,
+      "date_on_sale_to": null,
+      "date_on_sale_to_gmt": null,
+      "on_sale": false,
+      "purchasable": true,
+      "total_sales": 0,
+      "virtual": false,
+      "downloadable": false,
+      "downloads": [],
+      "download_limit": -1,
+      "download_expiry": -1,
+      "external_url": "",
+      "button_text": "",
+      "tax_status": "taxable",
+      "tax_class": "",
+      "manage_stock": true,
+      "stock_quantity": 7,
+      "backorders": "no",
+      "backorders_allowed": false,
+      "backordered": false,
+      "low_stock_amount": null,
+      "sold_individually": false,
+      "weight": "300",
+      "dimensions": {
+        "length": "",
+        "width": "",
+        "height": ""
+      },
+      "shipping_required": true,
+      "shipping_taxable": true,
+      "shipping_class": "",
+      "shipping_class_id": 0,
+      "reviews_allowed": true,
+      "average_rating": "0.00",
+      "rating_count": 0,
+      "upsell_ids": [],
+      "cross_sell_ids": [],
+      "parent_id": 0,
+      "purchase_note": "",
+      "categories": [
+        {
+          "id": 17,
+          "name": "T-shirt",
+          "slug": "t-shirt"
+        }
+      ],
+      "tags": [],
+      "images": [
+        {
+          "id": 13,
+          "date_created": "2021-06-29T10:59:06",
+          "date_created_gmt": "2021-06-29T06:59:06",
+          "date_modified": "2021-06-29T10:59:06",
+          "date_modified_gmt": "2021-06-29T06:59:06",
+          "src": "http://146.59.157.196:8005/wp-content/uploads/2021/06/GoodBarber_t-shirt_2_1024x1024@2x-compressed.jpg",
+          "name": "GoodBarber_t-shirt_2_1024x1024@2x-compressed",
+          "alt": ""
+        }
+      ],
+      "attributes": [],
+      "default_attributes": [],
+      "variations": [],
+      "grouped_products": [],
+      "menu_order": 0,
+      "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi>15,00<span class=\"woocommerce-Price-currencySymbol\">&euro;</span></bdi></span>",
+      "related_ids": [],
+      "meta_data": [
+        {
+          "id": 30,
+          "key": "_last_editor_used_jetpack",
+          "value": "classic-editor"
+        },
+        {
+          "id": 54,
+          "key": "_wc_gla_visibility",
+          "value": "sync-and-show"
+        }
+      ],
+      "stock_status": "instock",
+      "_links": {
+        "self": [
+          {
+            "href": "http://146.59.157.196:8005/wp-json/wc/v3/products/12"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://146.59.157.196:8005/wp-json/wc/v3/products"
+          }
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "name": "Test variant",
+      "slug": "test-variant",
+      "permalink": "http://146.59.157.196:8005/produit/test-variant/",
+      "date_created": "2021-07-30T11:21:16",
+      "date_created_gmt": "2021-07-30T09:21:16",
+      "date_modified": "2021-07-30T11:21:16",
+      "date_modified_gmt": "2021-07-30T09:21:16",
+      "type": "variable",
+      "status": "publish",
+      "featured": false,
+      "catalog_visibility": "visible",
+      "description": "<p>test variant</p>\n",
+      "short_description": "",
+      "sku": "VAR",
+      "price": "20",
+      "regular_price": "",
+      "sale_price": "",
+      "date_on_sale_from": null,
+      "date_on_sale_from_gmt": null,
+      "date_on_sale_to": null,
+      "date_on_sale_to_gmt": null,
+      "on_sale": false,
+      "purchasable": true,
+      "total_sales": 0,
+      "virtual": false,
+      "downloadable": false,
+      "downloads": [],
+      "download_limit": -1,
+      "download_expiry": -1,
+      "external_url": "",
+      "button_text": "",
+      "tax_status": "taxable",
+      "tax_class": "",
+      "manage_stock": true,
+      "stock_quantity": 4,
+      "backorders": "no",
+      "backorders_allowed": false,
+      "backordered": false,
+      "low_stock_amount": null,
+      "sold_individually": false,
+      "weight": "3",
+      "dimensions": {
+        "length": "",
+        "width": "",
+        "height": ""
+      },
+      "shipping_required": true,
+      "shipping_taxable": true,
+      "shipping_class": "",
+      "shipping_class_id": 0,
+      "reviews_allowed": true,
+      "average_rating": "0.00",
+      "rating_count": 0,
+      "upsell_ids": [],
+      "cross_sell_ids": [],
+      "parent_id": 0,
+      "purchase_note": "",
+      "categories": [
+        {
+          "id": 15,
+          "name": "Non class\u00e9",
+          "slug": "non-classe"
+        }
+      ],
+      "tags": [],
+      "images": [
+        {
+          "id": 41,
+          "date_created": "2021-07-30T13:12:18",
+          "date_created_gmt": "2021-07-30T09:12:18",
+          "date_modified": "2021-07-30T13:12:18",
+          "date_modified_gmt": "2021-07-30T09:12:18",
+          "src": "http://146.59.157.196:8005/wp-content/uploads/2021/07/color-t-shirt1-scaled.jpg",
+          "name": "color-t-shirt1",
+          "alt": ""
+        }
+      ],
+      "attributes": [
+        {
+          "id": 0,
+          "name": "Taille",
+          "position": 0,
+          "visible": true,
+          "variation": true,
+          "options": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      ],
+      "default_attributes": [],
+      "variations": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "grouped_products": [],
+      "menu_order": 0,
+      "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi>20,00<span class=\"woocommerce-Price-currencySymbol\">&euro;</span></bdi></span>",
+      "related_ids": [],
+      "meta_data": [
+        {
+          "id": 377,
+          "key": "_last_editor_used_jetpack",
+          "value": "classic-editor"
+        },
+        {
+          "id": 494,
+          "key": "_wc_gla_visibility",
+          "value": "sync-and-show"
+        }
+      ],
+      "stock_status": "instock",
+      "_links": {
+        "self": [
+          {
+            "href": "http://146.59.157.196:8005/wp-json/wc/v3/products/36"
+          }
+        ],
+        "collection": [
+          {
+            "href": "http://146.59.157.196:8005/wp-json/wc/v3/products"
+          }
+        ]
+      }
+    }
+
+]
