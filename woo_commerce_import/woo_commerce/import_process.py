@@ -4,7 +4,7 @@ import requests
 
 from woocommerce import API
 
-from configuration import config as config
+from configuration import config_dev as config
 from public_api.src.httpClient.catalogapi import CatalogApi
 
 
@@ -86,12 +86,16 @@ class WooImportProcess(object):
         version="wc/v3"
         )
 
-    def __init__(self, product_per_page=100):
-        gb_collections = self.catalog_public_api.list_all_collections().json()
-        self.collections_shop = [Collection(**collection)
-                                 for collection in gb_collections.get('collections')]
+    def __init__(self, product_per_page=100, status="all",
+                 variant=True, picture=True):
+        # gb_collections = self.catalog_public_api.list_all_collections().json()
+        # self.collections_shop = [Collection(**collection)
+        #                          for collection in gb_collections.get('collections')]
         self.product_per_page = product_per_page
-        self.all_options = self.catalog_public_api.list_all_options().json()
+        self.status = status
+        self.variant = variant
+        self.picture = picture
+        # self.all_options = self.catalog_public_api.list_all_options().json()
 
     def init_catalog_gb(self):
         """
@@ -104,8 +108,27 @@ class WooImportProcess(object):
         """
         Get the woo commerce catalog
         """
-        data = self.wc_api.get('products', params={"per_page": self.product_per_page})
+        data = []
+        next_page = True
+        page = 1
+        while next_page:
+            res = self.wc_api.get('products', params={
+                "per_page": self.product_per_page,
+                "page": page
+                })
+            urls = res.headers["link"].split(',')
+            urls = {url.split(";")[1].strip():url.split(";")[0].strip() for url in urls}
+            next_page = urls.get('rel="next"') != None and self.product_per_page == 100
+            page += 1
+            data += res.json()
         return data
+
+    def return_right_status_condition(self, woo_product):
+        if self.status == "all":
+            return (woo_product.get('status') == "publish" 
+                    or woo_product.get('status') == "private")
+        else:
+            return woo_product.get('status') == self.status
 
     def parse_detail_product(self, woo_product):
         """
@@ -130,6 +153,10 @@ class WooImportProcess(object):
         return gb_product
 
     def parse_options(self, woo_product):
+        """
+        Parse woo commerce attributes and return an array of
+        goodbarber options
+        """
         all_options = []
         for attribute in woo_product.get('attributes'):
             gb_attribute_object = GbOption(name=attribute.get('name'), id_gb="") 
@@ -199,7 +226,7 @@ class WooImportProcess(object):
         logging.info(f"ID product from gb: {id_product}")
         woo_variations = woo_product.get('variations')
         all_variants = []
-        if len(woo_variations) > 0:
+        if len(woo_variations) > 0 and self.variant:
             parse_opt = self.parse_options(woo_product)
             self.create_options_in_gb(parse_opt)
             for id_variant in woo_variations:
@@ -256,9 +283,10 @@ class WooImportProcess(object):
         """
         for product in woo_commerce_catalog:
             # Create collection if doesn't exist into back office
-            created = self.parse_woo_product_and_create(product)
-            if not created:
-                continue
+            if self.return_right_status_condition(product):
+                created = self.parse_woo_product_and_create(product)
+                if not created:
+                    continue
 
     def parse_woo_product_and_create(self, product):
         """
@@ -268,7 +296,7 @@ class WooImportProcess(object):
         gb_product = self.parse_detail_product(product)
         product_gb_api = self.catalog_public_api.create_a_product(gb_product).json()
         # Upload all images
-        if len(product.get('images')) > 0:
+        if len(product.get('images')) > 0 and self.picture:
             for image_object in product.get('images'):
                 self.upload_image_product(image_object, product_gb_api)
         gb_variants = self.parse_detail_variant(product, product_gb_api)
@@ -307,11 +335,6 @@ class WooImportProcess(object):
     def create_gb_product(self, product):
         """
         Create the gb product
-        Args:
-            product (any): The product to create
-
-        Returns:
-            int: Id of the product newly created
         """
         res = self.catalog_public_api.create_a_product(product).json()
         # print("Response create product: ", res.json())

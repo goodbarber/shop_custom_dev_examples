@@ -24,6 +24,23 @@ class TestWooImport(unittest.TestCase):
         with open(f"{self.PATH_TEST}/woo_variant.json", "r") as w_variant_file:
             self.woo_variant = json.load(w_variant_file)
 
+    def test_right_status_condition(self):
+        """
+        Test if the status flag is correctly sync with the
+        method that retrieve the right condition
+        """
+        self.woo_import_process.status = "publish"
+        woo_product = self.data_woo_commerce[0]
+        woo_product['status'] = "publish"
+        res = self.woo_import_process.return_right_status_condition(woo_product)
+        self.assertEqual(res, True)
+        woo_product['status'] = "private"
+        res = self.woo_import_process.return_right_status_condition(woo_product)
+        self.assertEqual(res, False)
+        self.woo_import_process.status = "all"
+        res = self.woo_import_process.return_right_status_condition(woo_product)
+        self.assertEqual(res, True)
+
     @mock.patch.object(WooImportProcess, 'get_existing_collections', return_value=[778836])
     def test_parse_product(self, mock_collections):
         """
