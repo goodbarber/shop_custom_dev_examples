@@ -4,7 +4,7 @@ import requests
 
 from woocommerce import API
 
-from configuration import config_dev as config
+from configuration import config as config
 from public_api.src.httpClient.catalogapi import CatalogApi
 
 
@@ -25,6 +25,10 @@ class Collection(object):
 
 
 class GbOption(object):
+    """
+    Class to represent a variant option of goodbarber
+    product, in order to compare it
+    """
     def __init__(self, name: str, id_gb: str):
         self.id = id_gb
         self.name = name.lower()
@@ -59,6 +63,7 @@ class UtilTreatment(object):
     Allow to do specific treatment on data
     """
     VAT_RATE = 10
+
     def apply_vat_rate(self, price: float):
         return (price) + round(price / 100 * self.VAT_RATE, 2)
 
@@ -88,14 +93,14 @@ class WooImportProcess(object):
 
     def __init__(self, product_per_page=100, status="all",
                  variant=True, picture=True):
-        # gb_collections = self.catalog_public_api.list_all_collections().json()
-        # self.collections_shop = [Collection(**collection)
-        #                          for collection in gb_collections.get('collections')]
+        gb_collections = self.catalog_public_api.list_all_collections().json()
+        self.collections_shop = [Collection(**collection)
+                                 for collection in gb_collections.get('collections')]
         self.product_per_page = product_per_page
         self.status = status
         self.variant = variant
         self.picture = picture
-        # self.all_options = self.catalog_public_api.list_all_options().json()
+        self.all_options = self.catalog_public_api.list_all_options().json()
 
     def init_catalog_gb(self):
         """
@@ -185,7 +190,8 @@ class WooImportProcess(object):
                     if option.get('name') == option_data.get('name'):
                         self.gb_parse_options.append(GbOption(name=option.get('name'),
                                                               id_gb=option.get('id')))
-                        logging.info(f"Get the option with name {option.get('name')} already created")
+                        logging.info(f"Get the option with name "
+                                     f"{option.get('name')} already created")
                         break
 
     def recover_gb_option(self, woo_attribute):

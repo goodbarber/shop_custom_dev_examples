@@ -21,7 +21,7 @@ class ImportCommand(object):
             type=int,
             help="Define a number of products per page, if option is"
             "used, no pagination used",
-            choices=range(0,101),
+            choices=range(0, 101),
             default=100
         )
         self.parser.add_argument(
