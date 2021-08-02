@@ -2,9 +2,9 @@ import logging
 import re
 import requests
 
-from woocommerce import API
+from woo_commerce import config
 
-from configuration import config as config
+from woocommerce import API
 from public_api.src.httpClient.catalogapi import CatalogApi
 
 
@@ -29,7 +29,7 @@ class GbOption(object):
     Class to represent a variant option of goodbarber
     product, in order to compare it
     """
-    def __init__(self, name: str, id_gb: str):
+    def __init__(self, name: str, id_gb: str=""):
         self.id = id_gb
         self.name = name.lower()
 
@@ -106,7 +106,7 @@ class WooImportProcess(object):
         """
         Import the woo commerce catalog to GoodBarber shop
         """
-        woo_catalog = self.get_woo_commerce_catalog().json()
+        woo_catalog = self.get_woo_commerce_catalog()
         self.parse_woo_commerce_catalog(woo_catalog)
 
     def get_woo_commerce_catalog(self):
@@ -176,8 +176,7 @@ class WooImportProcess(object):
         """
         for option in options:
             option_data = {
-                "name": option.name,
-                "id": option.id
+                "name": option.name
             }
             res = self.catalog_public_api.create_a_variant_option(option_data)
             if res.status_code >= 200 and res.status_code < 300:
@@ -199,7 +198,7 @@ class WooImportProcess(object):
         Recover the gb option associated with the woo commerce variant
         option attribute
         """
-        gb_option_woo = GbOption(name=woo_attribute.get('name'), id_gb="14")
+        gb_option_woo = GbOption(name=woo_attribute.get('name'))
         for gb_option in self.gb_parse_options:
             if gb_option == gb_option_woo:
                 return gb_option
@@ -214,9 +213,10 @@ class WooImportProcess(object):
         for attribute in woo_variant.get("attributes"):
             gb_option = self.recover_gb_option(attribute)
             gb_option_data = {
-                gb_option.id: attribute.get("option")
+                f"{gb_option.id}": attribute.get("option")
             }
             all_options_data.append(gb_option_data)
+        print("ALL OPTIONS DATA: ", all_options_data)
         return all_options_data
 
     def parse_detail_variant(self, woo_product, product_gb_api):
