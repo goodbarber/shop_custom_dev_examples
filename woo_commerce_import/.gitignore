@@ -1,0 +1,5 @@
+config_dev.py
+config_lucchini.py
+
+# Allow
+!config.py

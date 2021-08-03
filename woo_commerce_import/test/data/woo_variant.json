@@ -1,0 +1,78 @@
+{
+    "id": 37,
+    "date_created": "2021-07-30T11:00:43",
+    "date_created_gmt": "2021-07-30T09:00:43",
+    "date_modified": "2021-07-30T11:13:32",
+    "date_modified_gmt": "2021-07-30T09:13:32",
+    "description": "",
+    "permalink": "http://146.59.157.196:8005/produit/test-variant/?attribute_taille=S",
+    "sku": "VAR1",
+    "price": "20",
+    "regular_price": "20",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": false,
+    "status": "publish",
+    "purchasable": true,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": "parent",
+    "stock_quantity": 4,
+    "stock_status": "instock",
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "low_stock_amount": null,
+    "weight": "3",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "image": {
+      "id": 41,
+      "date_created": "2021-07-30T13:12:18",
+      "date_created_gmt": "2021-07-30T09:12:18",
+      "date_modified": "2021-07-30T13:12:18",
+      "date_modified_gmt": "2021-07-30T09:12:18",
+      "src": "http://146.59.157.196:8005/wp-content/uploads/2021/07/color-t-shirt1-scaled.jpg",
+      "name": "color-t-shirt1",
+      "alt": ""
+    },
+    "attributes": [
+      {
+        "id": 0,
+        "name": "Taille",
+        "option": "S"
+      }
+    ],
+    "menu_order": 1,
+    "meta_data": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://146.59.157.196:8005/wp-json/wc/v3/products/36/variations/37"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://146.59.157.196:8005/wp-json/wc/v3/products/36/variations"
+        }
+      ],
+      "up": [
+        {
+          "href": "http://146.59.157.196:8005/wp-json/wc/v3/products/36"
+        }
+      ]
+    }
+  }

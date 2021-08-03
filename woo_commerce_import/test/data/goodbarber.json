@@ -1,0 +1,346 @@
+[
+    {
+        "id": 4705353,
+        "created_at": "2021-07-07T13:59:34.789587Z",
+        "updated_at": "2021-07-07T13:59:38.466659Z",
+        "title": "Hoodie",
+        "meta_title": "",
+        "summary": "The GoodBarber Hoodie",
+        "meta_description": "",
+        "description": {
+            "paragraphes": []
+        },
+        "status": "PUBLISHED",
+        "visibility_start": null,
+        "visibility_end": null,
+        "highlight": false,
+        "variants": [
+            {
+                "price": "55.00000",
+                "compare_at": null,
+                "stock": 20,
+                "weight": 0.0,
+                "position": 0,
+                "option_values": [],
+                "sku": "HDIGB",
+                "media": null,
+                "id": 17447766,
+                "created_at": "2021-07-07T13:59:35.021690Z",
+                "updated_at": "2021-07-07T13:59:35.021720Z"
+            }
+        ],
+        "slug": "hoodie",
+        "media": 5863418,
+        "tags": [],
+        "slides": [
+            {
+                "focal_point": "",
+                "image_file": "https://storage.ww-api.com/storage_api/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                "product_id": 4705353,
+                "position": 1,
+                "thumbnails": {
+                    "square": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x400/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x800/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x1200/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x1800/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x2400/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg"
+                    },
+                    "portrait": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x600/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x1200/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x1800/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x2700/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x3600/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg"
+                    },
+                    "landscape": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x225/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x450/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x675/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x1012/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x1350/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg"
+                    },
+                    "originals": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x/50x50/v1/commerce_pict/2665588/1625666377121_31/goodbarber_hoodie_2_1024x10242x-compressed.jpg"
+                    }
+                },
+                "id": 5863417,
+                "created_at": "2021-07-07T13:59:36.840427Z",
+                "updated_at": "2021-07-07T13:59:36.840456Z"
+            },
+            {
+                "focal_point": "",
+                "image_file": "https://storage.ww-api.com/storage_api/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                "product_id": 4705353,
+                "position": 2,
+                "thumbnails": {
+                    "square": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x400/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x800/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x1200/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x1800/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x2400/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg"
+                    },
+                    "portrait": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x600/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x1200/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x1800/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x2700/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x3600/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg"
+                    },
+                    "landscape": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x225/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x450/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x675/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x1012/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x1350/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg"
+                    },
+                    "originals": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x/50x50/v1/commerce_pict/2665588/1625666375946_30/goodbarber_hoodie_6_1024x10242x-compressed.jpg"
+                    }
+                },
+                "id": 5863416,
+                "created_at": "2021-07-07T13:59:35.659498Z",
+                "updated_at": "2021-07-07T13:59:35.659538Z"
+            },
+            {
+                "focal_point": "",
+                "image_file": "https://storage.ww-api.com/storage_api/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                "product_id": 4705353,
+                "position": 0,
+                "thumbnails": {
+                    "square": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x400/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x800/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x1200/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x1800/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x2400/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg"
+                    },
+                    "portrait": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x600/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x1200/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x1800/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x2700/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x3600/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg"
+                    },
+                    "landscape": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x225/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x450/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x675/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x1012/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x1350/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg"
+                    },
+                    "originals": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x/50x50/v1/commerce_pict/2665588/1625666378254_31/goodbarber_hoodie_1_1024x10242x-compressed.jpg"
+                    }
+                },
+                "id": 5863418,
+                "created_at": "2021-07-07T13:59:37.966897Z",
+                "updated_at": "2021-07-07T13:59:37.966934Z"
+            }
+        ],
+        "collections": [
+            778836
+        ],
+        "auto_similar_products": [],
+        "custom_similar_products": [],
+        "show_similar_products": true,
+        "pdf_name": "",
+        "pdf": null,
+        "product_ref": "14",
+        "brand": ""
+    },
+    {
+        "id": 4705355,
+        "created_at": "2021-07-07T13:59:40.413477Z",
+        "updated_at": "2021-07-07T14:59:30.424570Z",
+        "title": "Key rings",
+        "meta_title": "",
+        "summary": "Traveler's key ring",
+        "meta_description": "",
+        "description": {
+            "paragraphes": [
+                {
+                    "id": "za2xe",
+                    "html": false,
+                    "paragraph_type": "TEXT"
+                },
+                {
+                    "id": "i2x8g",
+                    "html": false,
+                    "paragraph_type": "TEXT"
+                }
+            ]
+        },
+        "status": "PUBLISHED",
+        "visibility_start": null,
+        "visibility_end": null,
+        "highlight": false,
+        "variants": [
+            {
+                "price": "2.20000",
+                "compare_at": "5.50000",
+                "stock": 15,
+                "weight": 3.0,
+                "position": 0,
+                "option_values": [],
+                "sku": "KRGB",
+                "media": null,
+                "id": 17447768,
+                "created_at": "2021-07-07T13:59:40.635369Z",
+                "updated_at": "2021-07-07T15:17:54.641139Z"
+            }
+        ],
+        "slug": "key-ring",
+        "media": 5863420,
+        "tags": [],
+        "slides": [
+            {
+                "focal_point": "",
+                "image_file": "https://storage.ww-api.com/storage_api/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                "product_id": 4705355,
+                "position": 0,
+                "thumbnails": {
+                    "square": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x400/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x800/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x1200/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x1800/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x2400/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg"
+                    },
+                    "portrait": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x600/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x1200/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x1800/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x2700/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x3600/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg"
+                    },
+                    "landscape": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x225/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x450/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x675/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x1012/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x1350/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg"
+                    },
+                    "originals": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x/50x50/v1/commerce_pict/2665588/1625666381171_31/goodbarber-key-ring-2_1024x10242x.jpg"
+                    }
+                },
+                "id": 5863420,
+                "created_at": "2021-07-07T13:59:41.034743Z",
+                "updated_at": "2021-07-07T13:59:41.034773Z"
+            }
+        ],
+        "collections": [
+            778835
+        ],
+        "auto_similar_products": [],
+        "custom_similar_products": [],
+        "show_similar_products": true,
+        "pdf_name": "",
+        "pdf": null,
+        "product_ref": "10",
+        "brand": ""
+    },
+    {
+        "id": 4705354,
+        "created_at": "2021-07-07T13:59:38.866084Z",
+        "updated_at": "2021-07-07T13:59:40.014081Z",
+        "title": "T-shirt",
+        "meta_title": "",
+        "summary": "The GoodBarber famous T-Shirt",
+        "meta_description": "",
+        "description": {
+            "paragraphes": []
+        },
+        "status": "PUBLISHED",
+        "visibility_start": null,
+        "visibility_end": null,
+        "highlight": false,
+        "variants": [
+            {
+                "price": "16.50000",
+                "compare_at": null,
+                "stock": 10,
+                "weight": 0.3,
+                "position": 0,
+                "option_values": [],
+                "sku": "TSGB",
+                "media": null,
+                "id": 17447767,
+                "created_at": "2021-07-07T13:59:39.093192Z",
+                "updated_at": "2021-07-07T14:18:12.451341Z"
+            }
+        ],
+        "slug": "t-shirt",
+        "media": 5863419,
+        "tags": [],
+        "slides": [
+            {
+                "focal_point": "",
+                "image_file": "https://storage.ww-api.com/storage_api/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                "product_id": 4705354,
+                "position": 0,
+                "thumbnails": {
+                    "square": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x400/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x800/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x1200/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x1800/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x2400/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg"
+                    },
+                    "portrait": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x600/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x1200/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x1800/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x2700/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x3600/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg"
+                    },
+                    "landscape": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x225/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x450/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x675/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x1012/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x1350/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg"
+                    },
+                    "originals": {
+                        "small": "https://shoppicture.ww-api.com/pretty_pict/v1/400x/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "medium": "https://shoppicture.ww-api.com/pretty_pict/v1/800x/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "large": "https://shoppicture.ww-api.com/pretty_pict/v1/1200x/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "xlarge": "https://shoppicture.ww-api.com/pretty_pict/v1/1800x/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg",
+                        "original": "https://shoppicture.ww-api.com/pretty_pict/v1/2400x/50x50/v1/commerce_pict/2665588/1625666379767_31/goodbarber_t-shirt_2_1024x10242x-compressed.jpg"
+                    }
+                },
+                "id": 5863419,
+                "created_at": "2021-07-07T13:59:39.544386Z",
+                "updated_at": "2021-07-07T13:59:39.544415Z"
+            }
+        ],
+        "collections": [
+            778837
+        ],
+        "auto_similar_products": [],
+        "custom_similar_products": [],
+        "show_similar_products": true,
+        "pdf_name": "",
+        "pdf": null,
+        "product_ref": "12",
+        "brand": ""
+    }
+]
