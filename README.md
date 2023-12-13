@@ -1,7 +1,6 @@
 eCommerce API Examples
-======================
-## General Info
 ***
+## General Info
 In this repository, there are 2 examples using the GoodBarber Public API for GoodBarber Shopping apps.
 
 ## Get an SMS for incoming orders
